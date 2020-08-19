@@ -1,0 +1,63 @@
+defmodule Netflex.DataTypes.Page do
+  use Netflex.Mutators.ContentApi,
+    boolean: [
+      :children_inherit_url,
+      :published,
+      :use_time,
+      :visible,
+      :visible_nav,
+      :visible_subnav,
+      :nav_hidden_xs,
+      :nav_hidden_sm,
+      :nav_hidden_md,
+      :nav_hidden_lg,
+      :public
+    ],
+    integer: [
+      :id,
+      :group_id,
+      :revision,
+      :parent_id,
+      :sorting,
+      :authgroups
+    ]
+
+  defstruct [
+    :id,
+    :group_id,
+    :name,
+    :url,
+    :children_inherit_url,
+    :template,
+    :published,
+    :revision,
+    :use_time,
+    :start,
+    :stop,
+    :visible,
+    :visible_nav,
+    :visible_subnav,
+    :nav_hidden_xs,
+    :nav_hidden_sm,
+    :nav_hidden_md,
+    :nav_hidden_lg,
+    :nav_target,
+    :parent_id,
+    :image,
+    :icon,
+    :title,
+    :description,
+    :keywords,
+    :navtitle,
+    :sorting,
+    :lang,
+    :add_to_head,
+    :add_to_bodyclose,
+    :body_class,
+    :public,
+    :authgroups,
+    :author,
+    :userid,
+    :tags
+  ]
+end
